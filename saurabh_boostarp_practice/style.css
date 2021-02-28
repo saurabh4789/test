@@ -1,0 +1,35 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.sign_row{
+	background-color: #f8f9fa;
+}
+.sign_content{
+	text-align: right;
+}
+.sign_content a{
+	font-family: 'ViMedium',"Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2f3043;
+    margin-right: 30px;
+}
+.nav_bar ul{
+	display:flex;
+}
+.nav_bar ul li{
+	list-style: none;
+}
+.nav_bar ul li a{
+	font-family: 'ViRegular',"Helvetica","Arial",sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2f3043;
+    padding: 20px 10px 20px 10px;
+    text-align: left;
+}
+.nav_div{
+	display: flex;
+	align-items: center;
+}

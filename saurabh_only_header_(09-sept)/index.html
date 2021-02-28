@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Made Header</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div class="side_contaoner" id="nav_container">
+		<div class="sidenav" >
+			<div class="close_btn">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+				<span>CLOSE</span>
+			</div>
+			<form action="" method="post" class="search_form_close">
+				<div class="">
+					<input type="search" id="search-input" placeholder="Search">
+				</div>
+			</form>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li>
+					<span class="btn-mobile-subnav">›</span>
+				 	<a href="#">About</a>
+			<ul class="dropdown" id="mobile_sub_nav">
+								<li><a href="#">FAQ’s</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">Our Values</a></li>
+								<li><a href="#">Our Leadership</a></li>
+								<li><a href="#">Outreach</a></li>
+								<li><a href="#">Events</a></li>
+								<li><a href="#">Newsroom</a></li>			  <li><a href="#">Join Our Team</a></li>
+			</ul>
+				</li>
+				<li><a href="#">Stories</a></li>
+				<li>
+					<span class="btn-mobile-subnav">›</span>
+					<a href="#">Find Help</a>
+					<ul class="dropdown" id="mobile_sub_nav">
+								<li><a href="#">Services</a></li>
+								<li><a href="#">Behavioral Health</a></li>
+								<li><a href="#">Resources</a></li>
+								<li><a href="#">Mental Health Facts</a></li>
+								<li><a href="#">Personal Stories</a></li>
+					</ul>
+				</li>
+				<li>
+					<span class="btn-mobile-subnav">›</span>
+					<a  href="#">Contact</a>
+					<ul class="dropdown" id="mobile_sub_nav">
+								<li><a href="#">Locations</a></li>
+								<li><a href="#">Dispatch Portal</a></li>
+					</ul>
+				</li>
+				<li>
+					<span class="btn-mobile-subnav">›</span>
+					<a href="#">SMI</a>
+					<ul class="dropdown smi" id="mobile_sub_nav">
+							<li><a href="#">Community</a></li>
+							<li><a href="#">SMI Provider</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Donate</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="mobile-overlay" data-menu-toggle="">
+		
+	</div>
+	<div class="header_div">
+		<div class="inner_container">
+			<div class="search_opt">
+				<div class="menu_button" id="menu_button" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i><span>MENU</span></div>
+				<div >
+					<form action="" method="post" class="search-form">
+						<div class="search">
+							<span><label for="search-check"><i id="search_box" class="fa fa-search"></i><label /></span>
+							<input type="checkbox" id="search-check">
+							<input type="search" id="search-input" placeholder="Search">
+						</div>
+					</form>
+				</div>
+
+				<div class="nav" >
+					<ul>
+						<li>
+							<a class="call" href="#">Call Now</a>
+						</li>
+						<li><a href="#">About</a>
+							<ul class="dropdown">
+								<li><a href="#">FAQ’s</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">Our Values</a></li>
+								<li><a href="#">Our Leadership</a></li>
+								<li><a href="#">Outreach</a></li>
+								<li><a href="#">Events</a></li>
+								<li><a href="#">Newsroom</a></li>
+								<li><a href="#">Join Our Team</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Stories</a></li>
+						<li>
+						    <a href="#">Find Help</a>
+						    <ul class="dropdown">
+								<li><a href="#">Services</a></li>
+								<li><a href="#">Behavioral Health</a></li>
+								<li><a href="#">Resources</a></li>
+								<li><a href="#">Mental Health Facts</a></li>
+								<li><a href="#">Personal Stories</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Contact</a>
+							<ul class="dropdown">
+								<li><a href="#">Locations</a></li>
+								<li><a href="#">Dispatch Portal</a></li>
+							</ul>
+						</li>
+						<li><a class="call" href="#">SMI</a>
+							<ul class="dropdown smi">
+								<li><a href="#">Community</a></li>
+								<li><a href="#">SMI Provider</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Donate</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="logo" >
+				<img src="./images/logo-crn.png">
+			</div>
+		</div>
+		<div class="banner_text">
+			<h2>We are here for you and ready to help</h2>
+			<h1>24-hours a day, 7-days a week,<br> 365-days a year.</h1>
+			<div class="accordian">
+				<a href="#" onclick="myfun()">Call us now<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+				<div id="accordian_div"class="crn-contact-methods" style="overflow: hidden;">  
+      <a class="crn-contact-method" href="tel:602-222-9444" style="cursor: default;">
+        <span class="crn-contact-label">Central Arizona Crisis Line (Local)</span>
+        <h5 class="crn-contact-number">602-222-9444</h5>
+        <i class="fa fa-phone" aria-hidden="true"></i>
+      </a>
+      <a class="crn-contact-method" href="tel:1-800-631-1314" style="cursor: default;">
+        <span class="crn-contact-label">Central Arizona Crisis Line</span>
+        <h5 class="crn-contact-number">1-800-631-1314</h5>
+        <i class="fa fa-phone" aria-hidden="true"></i>
+      </a> 
+      <a class="crn-contact-method" href="tel:1-800-327-9254" style="cursor: default;">
+        <span class="crn-contact-label">Central Arizona Crisis Line (TTY)</span>
+        <h5 class="crn-contact-number">1-800-327-9254</h5>
+        <i class="fa fa-phone" aria-hidden="true"></i>
+      </a>
+      <a class="crn-contact-method" href="tel:1-877-756-4090" style="cursor: default;">
+        <span class="crn-contact-label">Northern Arizona Crisis Line</span>
+        <h5 class="crn-contact-number">1-877-756-4090</h5>
+        <i class="fa fa-phone" aria-hidden="true"></i>
+      </a> 
+      <a class="crn-contact-method" href="tel:(602) 347-1100" style="cursor: default;">
+        <span class="crn-contact-label">Central Arizona Warm Line</span>
+        <h5 class="crn-contact-number">(602) 347-1100</h5>
+        <i class="fa fa-phone" aria-hidden="true"></i>
+      </a>
+    </div>		
+			</div>
+			<div class="medical_text">
+				<p>For medical, police and fire emergency situations, <br
+					>always call 911</p>
+				<p class="Determination">For SMI Determination please call (855) 832-2866</p>
+			</div>
+			<div class="Start_Here">
+				<h3>Do you or someone you know need help?</h3>
+				<a href="#">Start Here</a>
+			</div>
+		</div>
+	</div>
+	<section class="body_conatiner">
+		<div class="did_you_know">
+			<div class="did_you_know_content">
+				<h3>Did you know?</h3>
+			</div>
+			<div class="three_boxes">
+				<div>
+					<img src="images/icon-stat-community.png">
+					<p>75% of people who call us are stabilized in the community</p>
+					<a href="#">Learn More ›</a>
+				</div>
+				<div class="Approximately">
+					<img src="images/icon-stat-2@2x.png">
+					<p>Approximately 1 in 5 adults & 1 in 5 youth experiences mental illness in the U.S. every year</p>
+					<a href="#">Learn More ›</a>
+				</div>
+				<div>
+					<img src="images/icon-stat-time.png">
+					<p>You will never wait longer than 10 seconds to talk to us</p>
+					<a href="#">Learn More ›</a>
+				</div>
+			</div>
+			
+		</div>
+		<div class="testimonial">
+			<div class="testimonial_inner_div">
+			<div>
+				<img src="images/person-1.png">
+			</div>
+			<div class="testimonial_text">
+				<h2>I am the father of a son who is diagnosed with a mental illness and going through medication changes. I called in to ask questions and the person I spoke with was very nice. She gave me good suggestions and strategies for understanding the situation. It was enlightening and she was very empathetic. Overall, it was a good experience.
+			    </h2>
+			    <p>– Family Member</p>	
+			</div>
+		</div>
+			
+		</div>
+		<div class="widget_area">
+			<div>
+				<h3>How we can help</h3>
+			</div>
+			<div class="widget_itam">
+				<div class="hover_effect">
+					<a href="#">
+					<img src="images/icon-smi-determination@2x.png">
+					<h4>SMI Determination</h4>
+					<p>Learn more about the SMI Determination process</p>
+					</a>
+				</div>
+				<div class="hover_effect">
+					<a href="#">
+					<img src="images/icon-help@2x.png">
+					<h4>Services</h4>
+					<p>Learn about how we can help you or your loved one</p>
+					</a>
+				</div>
+				<div class="hover_effect">
+					<a href="#">
+					<img src="images/icon-support@2x.png">
+					<h4>Get Help 24/7</h4>
+					<p>We are here for you and ready to help. All day. Every day.</p>
+					</a>
+				</div>
+				<div class="widget_content">
+					<h5>Need Help?</h5>
+					<h4>You are not alone.</h4>
+					<a href="#">Find Out More ›</a>
+				</div>
+				<div class="widget_content">
+					<h5>Upcoming Events</h5>
+					<a href="#">See All Events ›</a>
+				</div>
+				<div class="widget_content">
+					<h5>Latest Tweet</h5>
+					<h4>Shaken and stirred:The relation between stress and alcohol https://t.co/oGLtAkPU6X</h4>
+					<a href="#">See Post ›</a>
+				</div>
+			</div>
+			
+		</div>
+		
+	</section>
+	<footer>
+		<section class="footer_section">
+			<div class="footer_nav">
+				<div class="footer_logo footer_nav_inner">
+					<img src="images/logo-crn (1).png">
+				</div>
+				<div class="footer_nav_inner">
+					<h3>Pages</h3>
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Stories</a></li>
+						<li><a href="#">Find Help</a></li>
+						<li><a href="#">SMI</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Join Our Team</a></li>
+						<li><a href="#"><u>Notice of Privacy Practices</u></a></li>
+						<li><a href="#"><u>Notice of Nondiscrimination and Accessibility</u></a></li>
+						<li><a href="#"><u>CRN Fraud, Waste and Abuse Policy</u></a></li>
+					</ul>
+				</div>
+				<div class="footer_nav_inner">
+                  <h3>Address</h3>
+                  <ul>	
+                  	<li>
+					<a href="#">Crisis Response Network, Inc 1275 West Washington Street<br> Suite 210<br>Tempe, AZ 85281</a>
+				</li>
+				</ul>
+				</div>
+				<div class="footer_nav_inner">
+					 <h3>Address</h3>
+					 <ul>
+						<li><a style="margin-left: 20px;" href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+						<li><a style="margin-left: 20px;" href="#"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+					</ul>
+
+				</div>	
+			</div>	
+		</section>
+		<div class="BPTW_conatiner">
+			<div class="BPTW">
+				<img src="images/2019-BPTW-Square-300x170.png">				
+			</div>
+			<div class="BPTW_text">
+				<p>Services provided by CRN are funded through contracts with the Arizona Health Care Cost Containment System (AHCCCS), Mercy Care and Steward Health Choice Arizona.</p>
+				<p class="last_para">As of 2017, Crisis Response Network is a qualified Charitable tax Credit Organization in Arizona. The credit has been increased so that individuals can now give up to $400, and married couples can give up to $800. CRN’s assigned Qualified Charitable Organization Code (QCO Code) is: 20940.</p>
+			</div>
+		</div>	
+	</footer>
+
+
+<script type="text/javascript">
+function myfun() {
+			if (document.getElementById('accordian_div').style.display == "block") {
+				document.getElementById('accordian_div').style.display = "none";
+			} else {
+				document.getElementById('accordian_div').style.display = "block";
+			}
+		}
+
+		function openNav(){
+			if (document.getElementById('nav_container').style.display == "block") {
+				document.getElementById('nav_container').style.display = "none";
+			} else {
+				document.getElementById('nav_container').style.display = "block";
+			}
+		}
+		</script>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__main">
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span4">
+            {% module_block module "footer_block1" path="@hubspot/rich_text" %}
+              {% module_attribute "html" %}
+                <h2>New Module</h2>
+                <p>Add content here.</p>
+              {% end_module_attribute %}
+            {% end_module_block %}
+          </div>
+          <div class="span4">
+            {% module_block module "footer_block2" path="@hubspot/rich_text" %}
+              {% module_attribute "html" %}
+                <h2>New Module</h2>
+                <p>Add content here.</p>
+              {% end_module_attribute %}
+            {% end_module_block %}
+          </div>
+          <div class="span4">
+            {% module_block module "footer_block3" path="@hubspot/rich_text" %}
+              {% module_attribute "html" %}
+                <h2>New Module</h2>
+                <p>Add content here.</p>
+              {% end_module_attribute %}
+            {% end_module_block %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      {% module_block module "footer_copyright_text" path="@hubspot/text" %}
+      {% module_attribute "value" %}© {{ year }} All rights reserved.{% end_module_attribute %}
+      {% end_module_block %}
+    </div>
+  </div>
+</footer>
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}

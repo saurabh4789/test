@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NavBar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wraper">
+		<header class="header_width">
+			<div class="nav_bar">
+				<div class="logo_div">
+				<img src="./images/brand_logo.svg">
+			</div>
+				<ul>
+					<li><a class="first_anchor" href="#">Home</a></li>
+					<li><a href="#">Documentation</a></li>
+					<li><a href="#">Examples</a></li>
+					<li><a href="#">Icons</a></li>
+					<li><a href="#">Themes</a></li>
+					<li><a href="#">Expo</a></li>
+					<li><a href="#">Blog</a></li>
+				</ul>
+			</div>
+			<div class="right_content">
+				<div class="second_nav">
+					<ul>
+					<li onclick="myFun()">
+						<a href="#" style="color:#fff;">v4.5</a>
+						<i class="fa fa-sort-desc" aria-hidden="true"></i>	
+						<ul id="nav_id" class="drop_down">
+							<li><a href="#">Latest (4.5.x)</a></li>
+					<li><a href="#">v3.4.1</a></li>
+					<li><a href="#">v2.3.2</a></li>
+					<li><a href="#">All versions</a></li>
+						</ul>
+					</li>
+					</ul>
+				</div>
+				<div class="social_icon">
+					<img src="./images/git-svg.png">
+					<img src="./images/twitter.svg">
+					<img src="./images/slack.svg">
+					<img src="./images/evenodd.svg">
+				</div>
+				<div class="download_btn">
+					<button>Download</button>
+				</div>
+			</div>
+		</header>	
+	</div>	
+	<p style="text-align: center;padding: 15px; font-size: 45px;">practice on video tag and iframe tag</p>
+<section class="body_section">
+ 	<div class="iframe">
+ 	  <iframe src="https://thewebplant.com/"  width="100%" height="300px"></iframe>		
+	</div>
+	<div class="video_area">
+		<video controls="" width="100%" height="300px" autoplay="">
+				<source src="video/CSS Advanced Selectors ( Attribute Selectors ) Tutorial in HindiUrdu.mp4" type="video/mp4" />	
+		</video>
+	</div>	
+</section>
+<p style="text-align: center;padding: 15px; font-size: 45px;">practice on grid system</p>
+<section class="grid_container">
+	<div class="inner_grid_div first_div_1">
+		<h2>Web Design</h2>
+		<p>
+		Web Design is what we do. We’ve been doing it for years. It’s our core service and it’s what we’re best at. We pride ourselves on designing bespoke solutions that are perfectly tailored to addressing the needs of our clients. Not only as they stand today, but as those needs grow and change.
+	    </p>
+	</div>
+	<div class="inner_grid_div first_div_2">
+		<h2>Responsive Design</h2>
+		<p>
+		With the ever growing rise in mobile users, responsive design is becoming the norm, and is practically a must-have for all new websites. We have a comprehensive and inclusive approach to website planning that means that everything we do has responsiveness in mind from the outset.
+	    </p>
+	</div>
+	</div>
+ 	<div class="inner_grid_div first_div_3">
+ 		<h2>Web Development</h2>
+		<p>
+		We’re very proud of the build quality of our websites. Keeping up to date with emerging technologies and best practices is all part of the fun for us, and it serves us well when it comes to delivering websites that are reliable, stable, lightweight and secure, with only the cleanest of code.
+	    </p>
+ 	</div>
+ 	<div class="inner_grid_div first_div_4">
+ 		<h2>App Development</h2>
+		<p>
+		The planning and development of complicated systems is one of our main specialities. So much so, that we have developed something of a reputation in this area of expertise. This may include work such as large bespoke web applications, mobile apps, API based systems and full business management tools.
+	    </p>
+ 	</div>
+ 	<div class="inner_grid_div first_div_5">
+ 		<h2>Ecommerce</h2>
+		<p>
+		We have been building ecommerce websites for years, and have worked with a wide range of platforms and payment systems. This experience means we can offer valuable advice on any ecommerce project and puts us in a great position to help our clients to maximise commercial opportunities and achieve online success.
+	    </p>
+ 	</div>
+ 	<div class="inner_grid_div first_div_6">
+ 		<h2>Software Design & Development</h2>
+		<p>
+		A shared vision and ongoing collaboration between our designers, developers and you are key to forging a great product. With out in-house QA team, you can be sure of a bug-free and high quality software.
+	    </p>
+ 	</div>
+</section>
+<p style="text-align: center;padding: 15px; font-size: 45px;">practice on flex system</p>
+
+<section class="flex_conatiner">
+	<div class="inner_flex_div flax_div_1">
+		<h1>WHO WE ARE</h1>
+		<div class="divider"></div>
+		<p>The WebPlant is more than a career or a stepping stone: it’s the adopted family of those who’ve called it home. Most of our employees have been present since the start of our journey.</p>
+	</div>
+	<div class="inner_flex_div flax_div_2">
+		
+	</div>
+	<div class="inner_flex_div flax_div_3">
+		
+	</div>
+	<div class="inner_flex_div flax_div_4">
+		<h1>WHY THE WEBPLANT? GLAD YOU ASKED!</h1>
+		<div class="divider"></div>
+		<p>We know how hard it is to pick a team. If The Webplant good?! (Yup). Is the team easy to work with? (Also yes). Will they deliver solid work at an honest rate? (Our clients think so!).</p>
+	</div>
+</section>
+ <script>
+		function myFun(){
+			if(document.getElementById('nav_id').style.display == 'block'){
+				document.getElementById('nav_id').style.display = 'none';
+				document.getElementById('nav_id').style.position = 'absolute';
+			} else{
+				document.getElementById('nav_id').style.display = 'block';
+				document.getElementById('nav_id').style.position = 'absolute';
+			}
+		}
+	</script>
+
+
+</body>
+</html>

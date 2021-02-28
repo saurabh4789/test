@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+ 
+  box-sizing: border-box;
+}
+
+.mobile_menu.menu_wrap .accordions .accordi a{webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    color: #fff;
+    display: block;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1;
+    outline: none;
+   padding: 15px 0 15px 3.2em;
+    text-decoration: none;}
+	.mobile_menu.menu_wrap .accordion{position:relative;}
+.mobile_menu.menu_wrap .accordion .accordion__head{position:relative;}
+.mobile_menu.menu_wrap .accordion .accordion__head .accordion__body{}
+.mobile_menu.menu_wrap .accordion .accordion__head .accordion__body ul li{}
+.accordion {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.accordion__head a {
+ cursor: pointer;
+    color: #fff;
+       padding: 15px 0 15px 3.2em;
+    font-size: 1em;
+    font-weight: 700;
+    padding-left: 49px;
+    /* border-bottom: 2px solid #e59966; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion__head::after {
+ content: "\203A";
+    /* background: url(../images/check.png); */
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    transition: transform 300ms ease-in-out;
+    left: 23px;
+    font-size: 28px;
+    top: 7px;
+    color: #8a8a8a;
+}
+.opened .accordion__head::after {
+  transform: rotate(90deg);
+  color:#fff;
+  top: 25px;
+    left: 30px;
+}
+.accordion__body {
+             color: #fff;
+    font-size: 15px;
+    padding-left: 8px;
+}
+
+.dropdown {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.dropdown__head {
+  cursor: pointer;
+  color: #e59966;
+  padding: 12px 0;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion__head a:hover{background:#76598f;}
+.accordion ul li a:hover{background:#76598f;}
+.dropdown__head::after {
+  content: url('arrow.svg');
+  width: 16px;
+  height: 16px;
+  transition: transform 300ms ease-in-out;
+}
+.opened .dropdown__head::after {
+  transform: rotate(180deg);
+}
+.dropdown__body {
+  padding: 25px;
+  background-color: #e59966;
+  font-size: 18px;
+  transition: transform 300ms ease-in-out;
+  transform: translateY(25px);
+  max-width: 450px;
+}
+.opened .dropdown__body {
+  transform: translateY(0);
+}
+.mobile_menu.menu_wrap .accordions .accordi a:hover{background: #76598f;}

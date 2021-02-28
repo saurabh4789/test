@@ -1,0 +1,549 @@
+	<!DOCTYPE html>
+	<html>
+
+	<head>
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+		<!-- header section start -->
+		<header>
+		<div class="side_contaoner" id="nav_container">
+			<div class="sidenav">
+				<div class="close_btn" onclick="myfun()">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+					<span>CLOSE</span>
+				</div>
+				<button type="button" class="collapsible">PREPAID</button>
+				<div class="content">
+					<ul class="dropdown" id="mobile_sub_nav">
+						<li><a href="#">Recharge</a></li>
+						<li><a href="#">New Prepaid SIM</a></li>
+						<li><a href="#">View Plans</a></li>
+						<li><a href="#">International Roaming</a></li>
+						<li><a href="#">Switch Prepaid to Postpaid</a></li>
+						<li><a href="#">Port to Airtel Prepaid</a></li>
+					</ul>
+				</div>
+				<button type="button" class="collapsible">POSTPAID</button>
+				<div class="content">
+					<ul class="dropdown" id="mobile_sub_nav">
+						<li><a href="#">Pay Bill</a></li>
+						<li><a href="#">New Prepaid SIM</a></li>
+						<li><a href="#">Buy New Connection</a></li>
+						<li><a href="#">View Plans</a></li>
+						<li><a href="#">Switch Prepaid to Postpaid</a></li>
+						<li><a href="#">Port to Airtel</a></li>
+					</ul>
+				</div>
+				<button type="button" class="collapsible">BROADBAND</button>
+				<div class="content">
+					<ul class="dropdown" id="mobile_sub_nav">
+						<li><a href="#">Pay Bill</a></li>
+						<li><a href="#">Buy New Connection</a></li>
+						<li><a href="#">View Plans</a></li>
+					</ul>
+				</div>
+				<button type="button" class="collapsible">DTH</button>
+				<div class="content">
+					<ul class="dropdown" id="mobile_sub_nav">
+						<li><a href="#">Recharge</a></li>
+						<li><a href="#">Buy New DTH Connection</a></li>
+						<li><a href="#">View Plans</a></li>
+						<li><a href="#">Upgrade Box</a></li>
+						<li><a href="#">Xstream</a></li>
+					</ul>
+				</div>
+				<button type="button" class="collapsible">BANK</button>
+				<div class="content">
+					<ul class="dropdown" id="mobile_sub_nav">
+						<li><a href="#">View Account</a></li>
+						<li><a href="#">Get New Account</a></li>
+						<li><a href="#">Add Money</a></li>
+						<li><a href="#">Know More</a></li>
+					</ul>
+				</div>
+				<button type="button" class="collapsible">HELP</button>
+				<div class="content">
+					<ul class="dropdown" id="mobile_sub_nav">
+						<li><a href="#">Open Network</a></li>
+						<li><a href="#">FAQs</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="last_tems">
+					<div class="getApp">
+						<a class="actions-heading" data-analytics="header|Get App" href="https://www.airtel.in/airtel-thanks-app?icid=header"><img draggable="false" src="https://assets.airtel.in/static-assets/new-home/img/get-app.svg?v=1599409143504" alt="get app"> Get App</a>
+					</div>
+					<div class="last_nav">
+						<ul>
+							<li><a href="#">Personal</a></li>
+							<li><a href="#">Career</a></li>
+							<li><a href="#">Business</a></li>
+							<li><a href="#">Investor</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- mobile view stop -->
+
+		<div class="header_div">
+			<div class="header_conatoner">
+				<div class="payment_container">
+					<div class="payment_container_content">
+						<a href="">Xstream</a>
+						<a href="">Airtel Payments Bank</a>
+						<a href="">Wynk</a>
+					</div>
+					<span class="hr"></span>
+					<a href="">Personal</a>
+					<a href="">Career</a>
+					<a href="">Business</a>
+					<a href="">Investor</a>
+				</div>
+				<div class="nav_conatiner">
+					<div class="menu_button" id="menu_button" onclick="myfun()"><i class="fa fa-bars"
+							aria-hidden="true"></i><img src="./images/airtel-red.svg"></div>
+					<div class="logo">
+						<img src="./images/airtel-red.svg">
+					</div>
+					<div class="nav">
+						<ul>
+							<li><a href="#">PREPAID</a>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+								<ul class="dropdown">
+									<li><a href="#">Recharge</a></li>
+									<li><a href="#">New Prepaid SIM</a></li>
+									<li><a href="#">View Plans</a></li>
+									<li><a href="#">International Roaming</a></li>
+									<li><a href="#">Switch Prepaid to Postpaid</a></li>
+									<li><a href="#">Port to Airtel Prepaid</a></li>
+								</ul>
+							</li>
+							<li><a href="#">POSTPAID</a>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+								<ul class="dropdown">
+									<li><a href="#">Pay Bill</a></li>
+									<li><a href="#">Buy New Connection</a></li>
+									<li><a href="#">View Plans</a></li>
+									<li><a href="#">Switch Prepaid to Postpaid </a></li>
+									<li><a href="#">Port to Airtel </a></li>
+								</ul>
+							</li>
+							<li><a href="#">BROADBAND</a>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+								<ul class="dropdown">
+									<li><a href="#">Bill</a></li>
+									<li><a href="#">Buy New Connection</a></li>
+									<li><a href="#">View Plans</a></li>
+								</ul>
+							</li>
+							<li><a href="#">DTH</a>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+								<ul class="dropdown">
+									<li><a href="#">Recharge</a></li>
+									<li><a href="#">Buy New DTH Connection </a></li>
+									<li><a href="#">View Plans</a></li>
+									<li><a href="#">Upgrade Box</a></li>
+									<li><a href="#">Xstream</a></li>
+								</ul>
+							</li>
+							<li><a href="#">BANK</a>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+								<ul class="dropdown">
+									<li><a href="#">View Account</a></li>
+									<li><a href="#">Get New Account</a></li>
+									<li><a href="#">Add Money</a></li>
+									<li><a href="#">Know More</a></li>
+								</ul>
+							</li>
+							<li><a href="#">HELP</a>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+								<ul class="dropdown">
+									<li><a href="#">Open Network</a></li>
+									<li><a href="#">FAQs</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="nav_div">
+						<ul>
+							<li>
+								<span>
+									<img src="images/get-app.svg">
+								</span>
+								<a href="#"> Get App </a>
+							</li>
+							<li>
+								<span>
+									<img src="images/airtel-store.svg">
+								</span>
+								<a href="#"> Airtel Store </a>
+							</li>
+							<li>
+								<span>
+									<img src="images/login-user.svg">
+								</span>
+								<a href="#"> Login </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		</header>
+		<!-- header section close -->
+
+		<!-- body section start -->
+		<!-- banner slider start -->
+	<div class="owl-slider">
+	<div id="carousel" class="owl-carousel">
+		<div class="item">
+			<img class="owl-lazy" data-src="images/banner-1.webp" alt="">
+		</div>
+		<div class="item">
+			<img class="owl-lazy" data-src="images/banner-2.webp" alt="">
+		</div>
+		<div class="item">
+			<img class="owl-lazy" data-src="images/banner-3.webp" alt="">
+		</div>
+		<div class="item">
+			<img class="owl-lazy" data-src="images/banner-4.webp" alt="">
+		</div>
+		<div class="item">
+			<img class="owl-lazy" data-src="images/banner-5.webp" alt="">
+		</div>
+		<div class="item">
+			<img class="owl-lazy" data-src="images/banner-6.webp" alt="">
+		</div>
+	</div>
+	</div>
+	<!-- banner slider stop -->
+	<!-- Switch to Airtel without section start -->
+	 <div class="Switch pattern">
+	 	<div class="Switch_conatiner">
+	 		<div class="switch_img">
+	 			<img src="images/airtel-international-roaming.webp">
+	 		</div>
+	 		<div class="switch_content">
+	 			<h2>Port to Airtel</h2>
+	 			<hr class="divider">
+	 			<h4>Switch to Airtel without changing your mobile number</h4>
+	 			<a href="#">View Plans →</a>
+	 		</div>
+	 	</div>
+	 </div>
+	<!-- Switch to Airtel without section stop-->
+<!-- multiple image slider open -->
+<div class="multiple_slider">
+	<div class="owl-slider">
+	<div id="carousel_2" class="owl-carousel">
+		<div class="item">
+			<div class="inner_item">
+				<p>Xstream Box</p>
+			<img class="owl-lazy" data-src="images/xstream-box.webp" alt="">
+			<a href="#">Buy Now</a>
+			</div>
+		</div>
+		<div class="item">
+			<div class="inner_item">
+				<p>Xstream Box</p>
+			<img class="owl-lazy" data-src="images/xstream-fiber.webp" alt="">
+			<a href="#">Buy Now</a>
+			</div>
+		</div>
+		<div class="item">
+			<div class="inner_item">
+				<p>Xstream Box</p>
+			<img class="owl-lazy" data-src="images/xstream-app.webp" alt="">
+			<a href="#">Buy Now</a>
+			</div>
+		</div>
+		<div class="item">
+			<div class="inner_item">
+				<p>Xstream Box</p>
+			<img class="owl-lazy" data-src="images/download.jpeg" alt="">
+			<a href="#">Buy Now</a>
+			</div>
+		</div>
+		<div class="item">
+			<div class="inner_item">
+				<p>Xstream Box</p>
+			<img class="owl-lazy" data-src="images/images.jpeg" alt="">
+			<a href="#">Buy Now</a>
+			</div>
+		</div>
+		<div class="item">
+			<div class="inner_item">
+				<p>Xstream Box</p>
+			<img class="owl-lazy" data-src="images/download (1).jpeg" alt="">
+			<a href="#">Buy Now</a>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	<!-- multiple image slider close -->
+
+	<!-- isotop section start -->
+	<div class="isotop_section">
+	<div class="wrapper">
+<div class="button-group filters-button-group">
+  <button class="button is-checked" data-filter="*">All</button>
+  <button class="button" data-filter=".city1">city1</button>
+  <button class="button" data-filter=".city2">city2</button>
+  <button class="button" data-filter=".city3">city3</button>
+</div>
+<div class="grid">
+  <div class="element-item city1" data-category="transition">
+    <img src="https://placeimg.com/640/640/arch/1">
+    <!-- <h3 class="name">Title 1</h3>
+    <p class="city">City 1</p>
+    <p class="date">10/2016</p> -->
+  </div>
+  <div class="element-item city2" data-category="metalloid">
+    <img src="https://placeimg.com/640/640/arch/2">
+    <!-- <h3 class="name">Title 2</h3>
+    <p class="city">City 2</p>
+    <p class="date">09/2016</p> -->
+  </div>
+  <div class="element-item city3" data-category="post-transition">
+    <img src="https://placeimg.com/640/640/arch/3">
+   <!--  <h3 class="name">Title 3</h3>
+    <p class="city">City 3</p>
+    <p class="date">09/2016</p> -->
+  </div>
+  <div class="element-item city3 " data-category="post-transition">
+    <img src="https://placeimg.com/640/640/arch/4">
+  <!--   <h3 class="name">Title 4</h3>
+    <p class="city">City 3</p>
+    <p class="date">09/2016</p> -->
+  </div>
+</div>
+</div>
+</div><!-- /wrapper -->
+	<!-- isotop section close -->
+	<!-- footer start  -->
+	<footer>
+		<div class="footer_wraper">
+		<div class="footer_container">
+			<div>
+				<h3>Quick Access</h3>
+				<ul>
+					<li><a href="#">Prepaid Recharge</a></li>
+					<li><a href="#">Postpaid Bill Payment</a></li>
+					<li><a href="#">DTH Recharges</a></li>
+					<li><a href="#">Broadband Bill Payment</a></li>
+					<li><a href="#">Exciting Offers</a></li>
+					<li><a href="#">Airtel Payments Bank</a></li>
+					<li><a href="#">Airtel Thanks App</a></li>
+					<li><a href="#">Buy Smartphone</a></li>
+					<li><a href="#">Telecom Tariff</a></li>
+					<li><a href="#">Rights Issue</a></li>
+					<li><a href="#">QIP & FCCB Issue</a></li>
+				</ul>
+			</div>
+			<div>
+               <h3>Help at Hand</h3>
+				<ul>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Find a store</a></li>
+					<li><a href="#">Check Coverage</a></li>
+					<li><a href="#">Ownership Transfer</a></li>
+					<li><a href="#">Manage Your account</a></li>
+					<li><a href="#">ISP Near Me</a></li>
+					<li><a href="#">Wynk Music</a></li>
+				</ul>
+			</div>
+			<div>
+				<h3>New Connections</h3>
+				<ul>
+					<li><a href="#">Airtel Xstream</a></li>
+					<li><a href="#">Switch to Airtel</a></li>
+					<li><a href="#">International Roaming</a></li>
+					<li><a href="#">Buy DTH New Connection</a></li>
+					<li><a href="#">Buy Prepaid New Connection</a></li>
+					<li><a href="#">Buy Broadband New Connection</a></li>
+					<li><a href="#">Buy Xstream Box</a></li>
+				</ul>
+			</div>
+			<div>
+				<h3>About Airtel</h3>
+				<ul>
+					<li><a href="#">Brand</a></li>
+					<li><a href="#">Career</a></li>
+					<li><a href="#">Partner</a></li>
+					<li><a href="#">Business</a></li>
+					<li><a href="#">About Airtel</a></li>
+					<li><a href="#">Press Release</a></li>
+					<li><a href="#">Investor Support</a></li>
+					<li><a href="#">Telecom Charter</a></li>
+				</ul>
+			</div>
+			<div class="Social_media">
+				<h3>Social link</h3>
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>	
+		</div>
+	</div>
+		
+	</footer>
+	<!-- footer stop  -->
+
+		<!-- body section close -->
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+	   <script>
+	     jQuery("#carousel").owlCarousel({
+	  autoplay: true,
+	  lazyLoad: true,
+	  rewind: true,
+	  margin: 20,
+	  loop:true,
+	   /*
+	  animateOut: 'fadeOut',
+	  animateIn: 'fadeIn',
+	  */
+	  responsiveClass: true,
+	  autoHeight: true,
+	  autoplayTimeout: 7000,
+	  smartSpeed: 800,
+	  nav: true,
+	  responsive: {
+	    0: {
+	      items: 1
+	    },
+
+	    600: {
+	      items: 1
+	    },
+
+	    1024: {
+	      items: 1
+	    },
+
+	    1366: {
+	      items: 1
+	    }
+	  }
+	});
+	          </script>
+	          <script>
+	     jQuery("#carousel_2").owlCarousel({
+	  autoplay: true,
+	  lazyLoad: true,
+	  rewind: true,
+	  margin: 20,
+	  loop:true,
+	  arrows:false,	
+	   /*
+	  animateOut: 'fadeOut',
+	  animateIn: 'fadeIn',
+	  */
+	  responsiveClass: true,
+	  autoHeight: true,
+	  autoplayTimeout: 7000,
+	  smartSpeed: 800,
+	  nav: false,
+	  responsive: {
+	    0: {
+	      items: 1
+	    },
+
+	    600: {
+	      items: 3
+	    },
+
+	    1024: {
+	      items: 4
+	    },
+
+	    1366: {
+	      items: 5
+	    }
+	  }
+	});
+	          </script>
+		     <script>
+			function myfun() {
+				if (document.getElementById('nav_container').style.display == "block") {
+					document.getElementById('nav_container').style.display = "none";
+				} else {
+					document.getElementById('nav_container').style.display = "block";
+				}
+			}
+			function openTab(){
+
+			}
+
+				var coll = document.getElementsByClassName("collapsible");
+				var i;
+
+				for (i = 0; i < coll.length; i++) {
+				coll[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var content = this.nextElementSibling;
+					if (content.style.display === "block") {
+					content.style.display = "none";
+					} else {
+					content.style.display = "block";
+					}
+				});
+				}
+		</script>
+		<script>
+			// external js: isotope.pkgd.js
+
+// init Isotope
+var $grid = $('.grid').isotope({
+  itemSelector: '.element-item',
+  layoutMode: 'fitRows'
+});
+// filter functions
+var filterFns = {
+  // show if number is greater than 50
+  numberGreaterThan50: function() {
+    var number = $(this).find('.number').text();
+    return parseInt( number, 10 ) > 50;
+  },
+  // show if name ends with -ium
+  ium: function() {
+    var name = $(this).find('.name').text();
+    return name.match( /ium$/ );
+  }
+};
+// bind filter button click
+$('.filters-button-group').on( 'click', 'button', function() {
+  var filterValue = $( this ).attr('data-filter');
+  // use filterFn if matches value
+  filterValue = filterFns[ filterValue ] || filterValue;
+  $grid.isotope({ filter: filterValue });
+});
+// change is-checked class on buttons
+$('.button-group').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $( this ).addClass('is-checked');
+  });
+});
+
+		</script>
+
+	</body>
+
+	</html>

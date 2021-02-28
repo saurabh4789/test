@@ -1,0 +1,860 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	background-color: #F3F3F6;
+}
+a,h6,p,li,h1{font-family: 'Graphik', 'Helevetica Neue', Helevetica, Arial, sans-serif;}
+p{line-height: 27px;}
+.header{
+	background-color: #F3F3F6;
+	padding: 17px 65px;
+}
+.header_container{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+
+}
+.logo{
+	width: 25%;
+}
+.logo img{
+	    height: 42px;
+        width: auto;
+        cursor: pointer;
+}
+.nav_container{
+	width: 75%;
+	display: flex;
+	align-items: center;
+}
+.navigation_div ul{
+	display: flex;
+}
+.navigation_div ul li{
+	list-style-type: none;
+}
+.navigation_div ul li a{
+	text-decoration: none;
+	color: #310046;
+    font-size: 13px;
+    font-family: 'Graphik', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+    padding: 20px 15px;
+}
+.navigation_div ul li a:hover{
+	opacity: .5;
+	transition: opacity 0.2s ease-in-out 0s;
+}
+/*.navigation_div ul li:last-child a{
+	margin-left: 60px;
+}*/
+.navigation_div ul li a i{
+	margin-right: 10px;
+}
+.navigation_div{
+	width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.provalo button{
+	border: 1px solid black;
+    background-color: white;
+    border-radius: 15px;
+    padding: 13px 28px;
+    text-transform: capitalize;
+    font-family: 'Graphik', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #310046;
+    font-size: 16px;
+    line-height: 24px;
+    transition: background .5s;
+    cursor: pointer;
+}
+.provalo button:hover{
+	background: #310046 !important;
+    color: #fff !important;
+}
+.provalo{
+	display: flex;
+    justify-content: flex-end;
+    width: 20%;
+}
+.navigation_div ul li ul li{
+	text-align: left;
+	padding:5px 0px;	
+}
+.navigation_div ul li ul{
+	display: none;
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    position: absolute;
+    background: #fff;
+    z-index: 99;
+    transform: translate(0,20px);
+    transition: all 0.2s ease-out;
+    border-radius: 10px;
+    padding: 5px 0px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .05);
+	position: absolute;
+	width: 170px;
+}
+
+.navigation_div ul li:hover ul{
+	display: block;
+
+}
+.mobile_wraper{
+	display: none;
+}
+/*css for mobile*/
+.mobile_wraper{
+	background-color: #F3F3F6;
+}
+
+
+.mobile_provalo button{
+	border: 1px solid black;
+    background-color: white;
+    border-radius: 15px;
+    padding: 13px 28px;
+    text-transform: capitalize;
+    font-family: 'Graphik', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #310046;
+    line-height: 24px;
+    transition: background .5s;
+    cursor: pointer;
+}
+.mobile_provalo button:hover{
+	background: #310046 !important;
+    color: #fff !important;
+}
+
+.mobile_logo img{
+	height: 48px;
+    width: auto;
+}
+.side_bar span{
+	font-size: 13px !important;
+	color: #310046;
+	font-weight: bold;
+	margin-right: 10px;
+	font-family: 'Graphik', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+}
+.side_bar i{
+	color: #310046;
+}
+.mobile_conatiner{
+	width: 97%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5px 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+.mobile_provalo{
+	text-align: center;
+}
+.side_bar{
+	text-align: right;
+}
+.mobile_dropdown{
+	display: none;
+}
+.mobile_dropdown{
+	text-align: center;
+	width: 100%;
+}
+.mobile_dropdown ul li a{
+	color: #310046;
+    font-size: 13px;
+    text-decoration: none;
+    font-family: 'Graphik', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+   
+}
+.mobile_dropdown ul li{
+	 padding: 20px 10px;
+}
+.mobile_dropdown ul li:hover
+{
+	background-color:#310046; 
+}
+.mobile_dropdown ul li:hover a{
+	color:#fff;
+}
+
+.accedi{padding-left: 40px !important;}
+.fa-user-o{margin-right: 10px;}
+.accedi:before,.mob_accedi:before{
+        content: '';
+    display: inline-block;
+    margin-right: 10px;
+    width: 11px;
+    height: 12px;
+    background: url(images/login.png) no-repeat center top;
+    background-size: 100% auto;
+}
+
+
+
+/*css for footer*/
+footer{
+	    background-color: #310046;
+}
+.footer_container{
+	max-width: 1110px;
+	width: 100%;
+	margin: 0 auto;
+	display: grid;
+	padding: 5% 0;
+	/*align-items: center;*/
+	grid-column-gap: 20px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.footer_nav h6{
+	font-size: 14px;
+	font-weight: 600;
+	color:#fff;
+	margin-bottom: 30px;
+	text-transform: capitalize;
+}
+
+.footer_nav img{
+	width: 75% ;
+    height: auto ;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.footer_nav li,.footer_nav p{
+	 margin-bottom: 14px;
+	 list-style-type: none;
+}
+.footer_nav i{
+	color:#fff;
+	font-size: 14px;
+    margin: 24px 10px 0px;
+}
+.footer_nav a,.footer_nav p,.footer_nav li{
+	    
+	    font-size: 12px;
+	    color: #8b6f97;
+	    text-decoration: none;
+	    line-height: 19.5px;
+}
+.footer_nav a:hover{
+	text-decoration: underline;
+}
+
+/* css for body only*/
+.body_section{
+	max-width: 1110px;
+	width: 100%;
+	margin: 0 auto;
+}
+.eCommerce_Phar_con{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 70px 0px;
+}
+.Ecommerce_video video{
+	/*height: 100%;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 15px;
+   /* padding: 25px;*/
+}
+.eCommerce_Phar_content h1{
+ font-size: 78px;
+ color: #310046 ;
+ line-height: 1;
+}
+.eCommerce_Phar_content span{
+	font-weight: 500;
+	font-family: 'Ogg Roman', 'Times New Roman', Times, serif;
+}
+.eCommerce_Phar_content p{
+	font-weight: 300;
+    color: #310046;
+    font-size: 18px;
+    margin:30px 0px;
+}
+.eCommerce_Phar_content button,.Richiedi,.Solidarietà button{
+  background-color: #aafde3;
+    padding: 18px 35px;
+    border-radius: 15px;
+    font-family: 'Graphik', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background .5s;	
+    border: none;
+    color: #310046;
+     margin-bottom: 30px;
+}
+.eCommerce_Phar_content button:hover,.Richiedi:hover,.Solidarietà button:hover{
+	background: #39f9c7;
+}
+.eCommerce_Phar_content ul{
+	display: flex;
+} 
+.eCommerce_Phar_content ul li{
+	list-style-type: none;
+	margin: 0px 15px;
+	font-size: 13px;
+}
+.eCommerce_Phar_content i{
+	margin-right: 10px;
+}
+.three_conatiner{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 25px;
+}
+.inner_div{
+	background-color: #aafde3;
+    border-radius: 25px;
+    padding: 25px;
+    position: relative;
+}
+.inner_div h5{
+	font-family: 'Graphik', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 19px;
+    color: #310046 !important;
+    font-size: 1.25rem;
+}
+.inner_div p{
+	    color: #310046;
+	    margin-bottom: 37px;
+	    font-size: 16px;
+}
+
+.inner_div_img img{
+	height: 52px;
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: -26px;
+}
+.inner_div button
+{
+	background-color: #310046;
+    border: 1px solid #310046;
+    padding: 17px 34px;
+    border-radius: 15px;
+    font-family: 'Graphik', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    -webkit-transition: background .5s;
+    -o-transition: background .5s;
+    transition: background .5s;
+    text-align: center;
+    font-size: 16px;
+}
+.inner_div button:hover{
+	background-color: #fff;
+	color: #310046;
+}
+.eCommerce{
+	margin:10% auto;
+	width: 100%;
+}
+.eCommerce p{
+	font-size:15px;
+	color: #310046;
+	font-weight: 700;
+	text-align: center;
+}
+.eCommerce h2{
+	font-family: 'Ogg Roman', 'Times New Roman', Times, serif;
+    font-size: 42px;
+    color: #310046;
+    text-align: center;
+    font-weight: 500;
+}
+.eCommerce span{
+	font-family: 'Graphik', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+	font-weight: 600;
+}
+
+.SCROLL_video video{
+	width: 72%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #310046;
+	/*padding: 25px;*/
+    border-radius: 15px;
+    margin-top: 7%;
+}
+.Richiedi{
+	margin: 5% auto;
+    width: 17%;
+    display: flex;
+    justify-content: center;
+}
+.vantaggi h2{
+	font-family: 'Ogg Roman', 'Times New Roman', Times, serif;
+    font-size: 48px;
+    color: #310046;
+    text-align: center;
+    font-weight: 500;
+}
+.vantaggi span{
+	font-family: 'Graphik', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+	font-weight: 600;
+}
+.Daniele{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 10%;
+	margin: 10% 0;
+}
+iframe{
+	border: 1px solid black;
+    border-radius: 15px;
+    /*padding: 25px;*/
+}
+.Daniele_content p{
+   font-weight: 600;
+   color: #310046;
+   font-size: 15px;
+}
+.Daniele_content h3,.Solidarietà h3{
+	color: #310046 ;
+	font-family: 'Ogg Roman', 'Times New Roman', Times, serif;
+	margin: 40px 0px;
+	font-size: 38px;
+	font-weight: 500;
+}
+.Daniele_content span,.Solidarietà span{
+	font-family: 'Graphik', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+	font-weight: 600;
+}
+.Daniele_content h4{
+	font-family: 'Graphik', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #310046 ;
+}
+.Rassegna_content h4{
+	font-size: 28px;
+	margin-top: 15px;
+}
+.Daniele img{
+	height: auto;
+    max-width: 100%;
+}
+.Solidarietà p{
+	font-size: 20px;
+	color: #310046;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+.Solidarietà button{
+	margin-top: 40px;
+}
+.Solidarietà_img{
+	display: flex;
+	align-items: center;
+}
+.eCommerce_2 h2{
+	font-size: 48px;
+}
+.partner_number{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px; 
+}
+.giorno_video video{
+	width: 100%;
+	height: 100%;
+}
+.our_clients{
+	text-align: center;
+	margin: 10% 0;
+}
+.our_clients li{
+	list-style-type:none;
+	display: inline-block;
+	margin-top: 40px;
+}
+.our_clients li img{
+	    height: 34px;
+	    margin-right: 38px;
+	    display: flex;
+
+}
+/*image slider*/
+
+.wrapper{
+  width:100%;
+  padding-top: 20px;
+  /*text-align:center;*/
+}
+.slick-prev:before, .slick-next:before{
+	color: #000;
+}
+
+.carousel{
+  width:90%;
+  margin:0px auto;
+}
+.slick-slide{
+  margin:10px;
+}
+.slick-slide img{
+  width:100%;
+}
+.slick-next {
+    right: -30px;
+}
+.slick-prev {
+    left: -30px;
+}
+
+.inizia{
+    background-color: #aafde3;
+    text-align: center;
+    border-radius: 30px;
+    padding: 40px;
+    position: relative;
+        margin-top: 10%;
+    overflow: hidden;
+}
+.inizia video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: left bottom;
+    object-position: left bottom;
+    border-radius: 30px;
+}
+.inizia_content{
+	position: relative;
+}
+.inizia_content h3{
+	font-family: 'Ogg Roman', 'Times New Roman', Times, serif;
+	font-size: 1.75rem;
+	color: #310046;
+	font-weight: 500;
+}
+.inizia_content span{
+	font-family: 'Graphik', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+    font-weight: 600;
+}
+.inizia_content p{
+	margin:35px 0px;
+	font-size: 18px;
+	color: #310046;
+	letter-spacing: 1px;
+}
+.inline_listEye{
+	display: flex;
+	justify-content: center;
+}
+.inline_listEye li{
+	list-style-type: none;
+	    margin: 0 10px;
+    font-family: 'Graphik', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    font-weight: 100 !important;
+}
+.inline_listEye i{
+	margin-right: 10px;
+}
+
+.inizia_content button{
+	border: 1px solid #310046;
+    margin-bottom: 38px;
+    cursor: pointer;
+    background-color: #aafde3;
+    appearance: none;
+    padding: 18px 35px;
+    border-radius: 15px;
+    font-family: 'Graphik', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background .5s;
+    color: #310046;
+}
+.partner_div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+.partner_div_video video{
+    width: 85%;
+}
+.partner_div_content{
+        position: relative;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+}
+.partner_div_content h3{
+    color: #310046;
+    font-size: 60px;
+    font-family: 'Graphik', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+    font-weight: 600;
+}
+.partner_div_content h4{
+    color: #310046;
+    font-size: 24px;
+    font-family: 'Graphik', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+.justify-content-end {
+    -ms-flex-pack: end!important;
+    justify-content: flex-end!important;
+}
+.no-gutters>.col, .no-gutters>[class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+.wrapper_Farmacie_partner {
+    text-align: center;
+}
+.Farmacie_partner {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    -webkit-flex: 0 0 auto;
+    -moz-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    -o-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 50%;
+    margin: 0 auto;
+    padding: 100px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Farmacie_partner::before {
+    content: '';
+    position: absolute;
+    top: 33px;
+    left: -17px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #39fbc7;
+}
+
+
+.Farmacie_partner .partner_number {
+    color: #310046!important;
+}
+.Farmacie_partner .partner_number, .Anni_nel_settore .partner_number {
+    font-size: 60px;
+    font-family: 'Graphik', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #310046;
+    line-height: 1;
+}
+.Farmacie_partner p {
+    color: #310046!important;
+}
+.Anni_nel_settore p, .Farmacie_partner p {
+    font-size: 24px;
+    color: #310046;
+    line-height: normal;
+    margin: 5px 0 0;
+}
+
+
+@media screen and (max-width: 981px) {
+  .mobile_wraper{
+   display: block;
+  }
+  .header{
+  	display: none;
+  }
+  .eCommerce_Phar_con{
+  	display: block;
+  }
+  .eCommerce_Phar_content{
+  	margin-bottom: 20px;
+  }
+  .Richiedi{width: 25%;}
+  .three_conatiner,.Daniele{
+  	display:block;
+  }
+  .inner_div{margin:4% 0;}
+  .Daniele{margin:2% 0;}
+  iframe{
+  	height:350px;
+  }
+  .Daniele img {
+    height: auto;
+    max-width: 70%;
+    display: flex;
+    margin: 0 auto;
+}
+.Rassegna_content{
+	margin-top: 15px;
+}
+.Daniele_content{
+	margin-bottom: 15px;
+}
+.partner_div{
+    display: block;
+}
+.partner_div_video video{
+    margin-bottom: 4%;
+        width: 100%;
+}
+
+}
+
+@media(max-width: 1200px){
+	.header {padding: 17px 25px; }
+	.nav_container { width: 100%; }
+	.provalo { width: fit-content; }
+	.navigation_div{width: 100%;}
+	.navigation_div ul li { padding: 0 10px; }
+	.navigation_div ul li a{padding:0px;}
+	.body_section,.footer_container{width: 95%;margin: 0 auto;}
+}
+@media(max-width: 767px){
+	.footer_container{
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-row-gap: 15px;
+	}
+	.inner_div {
+    margin: 7% 0;
+}
+.Richiedi {
+    width: 50%;
+}
+.eCommerce_Phar_content ul li {
+    margin: 0px 4px;
+}
+.eCommerce_Phar_content h1{font-size: 70px;}
+.inizia video{object-fit: contain;}
+.Anni_nel_settore{left: 0 !important;}
+
+}
+@media(max-width: 380px){
+	.footer_container{
+		grid-template-columns: 1fr 1fr;
+	}
+	.inner_div {
+    margin: 10% 0;
+}
+
+}
+
+
+@media screen and (min-width: 920px){
+.Farmacie_partner::after {
+    content: '';
+}
+}
+.Farmacie_partner::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #310046;
+    z-index: 0;
+    opacity: .1;
+    -webkit-transform: translate3d(50%, 55%, 0);
+    -moz-transform: translate3d(50%, 55%, 0);
+    -ms-transform: translate3d(50%, 55%, 0);
+    -o-transform: translate3d(50%, 55%, 0);
+    transform: translate3d(50%, 55%, 0);
+}
+@media screen and (min-width: 920px)
+{
+.home #Ogni_eye .Anni_nel_settore {
+    position: absolute;
+    top: 100%;
+    -webkit-transform: translate3d(0, -46%, 0);
+    -moz-transform: translate3d(0, -46%, 0);
+    -ms-transform: translate3d(0, -46%, 0);
+    -o-transform: translate3d(0, -46%, 0);
+    transform: translate3d(0, -46%, 0);
+    margin-top: 0;
+    left: -90px;
+}
+}
+.Anni_nel_settore {
+    background-color: #aafde3;
+    display: inline-block;
+    padding: 35px 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: -35px;
+    position: relative;
+    max-width: 270px;
+    left: -200px;
+}
+.Farmacie_partner .partner_number1, .Anni_nel_settore .partner_number {
+    font-size: 60px;
+    font-family: 'Graphik', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #310046;
+    line-height: 1;
+}
+
+.Anni_nel_settore p, .Farmacie_partner p {
+    font-size: 24px;
+    color: #310046;
+    line-height: normal;
+    margin: 5px 0 0;
+}
+
+@media screen and (min-width: 920px){
+.home #Ogni_eye .Anni_nel_settore {
+    position: absolute;
+    top: 100%;
+    -webkit-transform: translate3d(0, -46%, 0);
+    -moz-transform: translate3d(0, -46%, 0);
+    -ms-transform: translate3d(0, -46%, 0);
+    -o-transform: translate3d(0, -46%, 0);
+    transform: translate3d(0, -46%, 0);
+    margin-top: 0;
+    left: -90px;
+}
+}
+.Anni_nel_settore {
+    background-color: #aafde3;
+    display: inline-block;
+    padding: 35px 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: -35px;
+    position: relative;
+    max-width: 270px;
+}
+.Anni_nel_settore span{
+    font-size:60px;
+    color: #310046;
+        font-family: 'Graphik', 'Helevetica Neue', Helevetica, Arial, sans-serif;
+    font-weight: 600;
+}

@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body
+{
+	font-family: 'Roboto', sans-serif;
+}
+.main_wraper
+{
+	width: 100%;
+    max-width: 100%;
+	background-image: linear-gradient(90deg,#fff 15%,#aaa 100%);
+    background-color: #ccc;
+    z-index: 10;
+    position: relative;
+    height: 20px;
+}
+}
+.main_container
+{
+	width: 100%;
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 20px;
+}
+.emergency_btn
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    border-radius: 50px;
+    top: 5px;
+}
+.emergency_btn_content {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+    background-color: #ec2028;
+    max-height: 50px;
+    padding-top: 0px!important;
+    padding-right: 15px!important;
+    padding-bottom: 5px!important;
+    padding-left: 10px!important;
+    margin-bottom: 0px!important;
+    transition: background-color 300ms ease 0ms,background-image 300ms ease 0ms;
+}
+.inner_emergency_btn_content
+{
+	max-width: 100%;
+	max-width: 550px;
+	display: flex;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+.emergency_btn_content_image
+{
+	position: relative;
+    top: 10px;
+    left: 5px;
+    width: 32px;
+    display: table-cell;
+    line-height: 0;
+}
+.emergency_image_wrap
+{
+  width: 28px;
+}
+.emergency_image_wrap img
+{
+    max-width: 89%;
+    height: auto;
+}
+/*--------------------*/
+
+.emergency_btn_content h4 span
+{
+	font-size: 14px;
+	color:#fff;
+	font-weight: 300;
+}
+.header_mobile_number
+{
+	font-size: 17px;
+	color:#fff;
+	font-weight: 600;
+}
+.Online_Specials
+{
+	display: flex;
+	float: right;
+}
+.social_media_icons i
+{
+	font-size: 18px;
+    color: #fff;
+    margin-right: 8px;
+    height: 32px;
+    width: 32px;
+    padding: 0;
+}
+.Online_Specials a
+{
+	margin: 0 0 0 10px;
+}
+.logo_container
+{
+	display: flex;
+	width: 100%;
+}
+.dropdown
+{
+display: flex;
+}
+.nav ul li a{
+	    padding: 10px 17px;
+	    border-radius: 4px;
+	    color: #24408f!important;
+	    border: 2px solid #eee;
+}
+.nav ul li
+{
+	list-style: none;
+}

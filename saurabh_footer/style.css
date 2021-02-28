@@ -1,0 +1,185 @@
+*
+{
+	margin:0px;
+	padding:0px;
+}
+.footer_sec
+{
+	background-image: url(http://quanticalabs.com/wp_themes3/fable/wp-content/uploads/sites/8/2014/09/pattern.png);
+    background-repeat: repeat;
+    background-position: 0px 0px;
+    background-size: auto;
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+}
+
+/*{
+    clear: both;
+    content: " ";
+    display: block;
+    visibility: hidden;
+}*/
+.container_div
+{
+	max-width: 1050px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+}
+.inner_div
+{
+  width: 22.65625%;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  margin-right: 3.125%;
+}
+.Heading span
+{
+ text-transform: uppercase;
+ font-size: 18px;
+ line-height: 25.2px;
+ font-weight: 400;
+ color: #fff;
+ font-family: 'Lato', sans-serif;
+}
+.hr
+{
+	width: 50px;
+    height: 2px;
+    display: block;
+    font-size: 0px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+ 	background-color: #A9A6CF;
+}
+.text_div p
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #CCCAE2;
+	line-height: 21px;
+	font-weight: 400;
+}
+.footer_logo img
+{
+	width: 186px;
+	height: 75px;
+	margin-top: 20px;
+}
+.first_ul li a{
+    padding: 12px;
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #CCCAE2;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    line-height: 19.5px;
+}
+.first_ul li
+{
+	list-style: none;
+	border-color: #807CB7;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 5px;
+}
+.first_ul li:hover
+{
+	border:2px solid #fff;
+}
+.second_ul ul li
+{
+	background-image: url(./images/style_4_alt.png);
+	background-size: 17px 17px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    margin-bottom: 8px;
+    color: #CCCAE2;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    list-style-type: none;
+}
+.second_ul
+{
+	margin-top: 20px;
+}
+.recent_content span
+{
+	background-image: url(./images/date_footer.png);
+	padding-left: 30px;
+    background-repeat: no-repeat;
+    background-position: left 2px;
+}
+.recent_content img
+{
+	width: 85px;
+	height: auto;
+    max-width: 100%;
+	margin-right: 15px;
+}
+.recent_content
+{
+	display: flex;
+	margin-bottom: 20px;
+}
+.recent_content p
+{
+	font-size: 16px;
+	line-height: 22.4px;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	margin-bottom: 10px;
+}
+.recent_content span
+{
+	font-size: 13px;
+	color: #CCCAE2;
+	font-family: 'Open Sans', sans-serif;
+}
+.last_inner_div
+{margin-right: 0px !important;}
+
+.icons_div i{
+    background-color: #FE6500;
+    color: #fff;
+    padding: 15px;
+    font-size: 19px;
+}
+.copyright_sec
+{
+	padding: 30px 0px 30px 0px;
+	text-align: center;
+}
+.icons_div i:hover
+{
+	background-color: #56509F;
+}
+.copyright_sec p
+{
+	margin-top: 20px;
+	color: #a0a0a0;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+}
+/*Apply media Query*/
+@media screen and (max-width: 1024px)
+{
+ .container_div {
+    width: 95%;
+}
+
+}
+@media screen and (max-width: 767px) {
+  .container_div{
+    display: block;
+  }
+  .inner_div
+  {
+    width: 93%;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+}
